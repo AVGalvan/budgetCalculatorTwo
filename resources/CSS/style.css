@@ -1,0 +1,32 @@
+.center{
+  text-align: center;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+#input{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 50%;
+}
+
+
+
+#generate {
+  margin-top: .5rem;
+}
+
+@media only screen and (max-width: 800px){
+  main div {
+    width: 100%;
+  }
+
+  #input{
+    width: 100%;
+  }
+}

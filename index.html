@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="resources/CSS/style.css">
+  <title>Budget Calculator 2</title>
+  
+</head>
+<body>
+  <header class="center">
+    <h1>Budget Calculator V.2</h1>  
+  </header>
+
+  <main class="center">
+    <div id="input" class="center">
+      <h2 class="sectionLabel">Input</h2>
+        <!--User will input total paycheck here -->
+        <div id="paycheckInput" class="inputContainer">
+          <label for="totalPaycheck">Total Paycheck:</label>
+          <input id="totalPaycheck" name="totalPaycheck" type="number" step="any" min="0" required> 
+        </div>
+
+        <!--User will select a distribution preset with radio buttons -->
+        <div id="presetInput"class="inputContainer">
+          <h3 class="instructions">Select A Preset</h3>
+          <input type="radio" name="preset" id="lavish" value="lavish"required>
+          <label for="lavish">Lavish: Donate 0%, Short 10%, Long 80%, Spend 10%</label>
+          <br>
+          <input type="radio" name="preset" id="pragmatic" value="pragmatic" checked>
+          <label for="pragmatic">Pragmatic: Donate 5%, Short 10%, Long 80%, Spend 5% </label>
+          <br>
+          <input type="radio" name="preset" id="philanthropic" value="philanthropic">
+          <label for="philanthropic">Philanthropic: Donate 10%, Short 10%, Long 80%, Spend 0%</label>
+        </div>
+        
+        <!--User will enter current amount in savings -->
+        <div id="savingsInput" class="inputContainer">
+          <h3 class="instructions">Enter current savings</h3>
+          <label for="longSavings">Long Savings</label> 
+          <input type="number" name="longSavings" id="longSavings" step="any" required>
+  
+          <br>
+          <label for="shortSavings">Short Savings</label>
+          <input type="number" name="shortSavings" id="shortSavings" step="any" required>
+        </div>
+
+        <!--Generate budget -->
+          <button id="generate">Generate</button>
+    </div>
+
+
+    
+    <!-- Shows how much money will be distributed to certain accounts -->
+    <div id="output" class="center">
+      <h2 class="sectionLabel">Output</h2><br>
+      <div class="outputContainer">
+        <p id="totalToSavings">Total amount to savings</p>
+      </div>
+      
+      <div class="outputContainer" >
+        <p id="totalToLong">Total amount to long savings</p>
+      </div>
+
+      <div class="outputContainer">
+        <p id="totalToShort">Total amount to short savings</p>
+      </div>
+
+      <div class="outputContainer">
+        <p id="totalToDonate">Amount to be donated</p>
+      </div>
+
+      <div class="outputContainer">
+        <p id="totalToSpend">Amount to be spent</p>
+      </div>
+      <div class="outputContainer">
+        <p id="newLong">New long term savings</p>
+      </div>
+      <div class="outputContainer">
+        <p id="newShort">New short term savings</p>
+      </div>
+
+    </div>
+  </main>
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
