@@ -17,13 +17,15 @@
     <div id="input" class="center">
       <h2 class="sectionLabel">Input</h2>
         <!--User will input total paycheck here -->
-        <div id="paycheckInput" class="inputContainer">
-          <label for="totalPaycheck">Total Paycheck:</label>
-          <input id="totalPaycheck" name="totalPaycheck" type="number" step="any" min="0" required> 
+        <div id="paycheckInput" class="inputContainer card">
+          <div>
+            <label for="totalPaycheck">Total Paycheck:</label>
+            <input id="totalPaycheck" name="totalPaycheck" type="number" step="any" min="0" required> 
+          </div>
         </div>
 
         <!--User will select a distribution preset with radio buttons -->
-        <div id="presetInput"class="inputContainer">
+        <div id="presetInput"class="inputContainer card">
           <h3 class="instructions">Select A Preset</h3>
           <input type="radio" name="preset" id="lavish" value="lavish"required>
           <label for="lavish">Lavish: Donate 0%, Short 10%, Long 80%, Spend 10%</label>
@@ -36,7 +38,7 @@
         </div>
         
         <!--User will enter current amount in savings -->
-        <div id="savingsInput" class="inputContainer">
+        <div id="savingsInput" class="inputContainer card">
           <h3 class="instructions">Enter current savings</h3>
           <label for="longSavings">Long Savings</label> 
           <input type="number" name="longSavings" id="longSavings" step="any" required>
@@ -54,30 +56,30 @@
     
     <!-- Shows how much money will be distributed to certain accounts -->
     <div id="output" class="center">
-      <h2 class="sectionLabel">Output</h2><br>
-      <div class="outputContainer">
+      <h2 class="sectionLabel">Output</h2>
+      <div class="outputContainer card">
         <p id="totalToSavings">Total amount to savings</p>
       </div>
       
-      <div class="outputContainer" >
+      <div class="outputContainer card" >
         <p id="totalToLong">Total amount to long savings</p>
       </div>
 
-      <div class="outputContainer">
+      <div class="outputContainer card">
         <p id="totalToShort">Total amount to short savings</p>
       </div>
 
-      <div class="outputContainer">
+      <div class="outputContainer card">
         <p id="totalToDonate">Amount to be donated</p>
       </div>
 
-      <div class="outputContainer">
+      <div class="outputContaine card">
         <p id="totalToSpend">Amount to be spent</p>
       </div>
-      <div class="outputContainer">
+      <div class="outputContainer card">
         <p id="newLong">New long term savings</p>
       </div>
-      <div class="outputContainer">
+      <div class="outputContainer card">
         <p id="newShort">New short term savings</p>
       </div>
 
